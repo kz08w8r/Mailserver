@@ -12,13 +12,13 @@ services:
 
   # Responsible for storing users and their aliases. Remove
   # if you already have a MySQL server.
-  db:
-    image: jeboehm/mailserver-db:latest
-    build: ./db
-    restart: on-failure:5
-    env_file: .env
-    volumes:
-      - data-db:/var/lib/mysql
+  #db:
+  #  image: jeboehm/mailserver-db:latest
+  #  build: ./db
+  #  restart: on-failure:5
+  #  env_file: .env
+  #  volumes:
+  #    - data-db:/var/lib/mysql
 
   # The Mail Transfer Agent (Postfix) receives incoming mail
   # on TCP port 25.
@@ -111,5 +111,5 @@ volumes:
   data-dkim:
   data-mail:
   data-tls:
-  data-filter:
+  d:ata-filter:
   data-virusdb:
